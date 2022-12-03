@@ -1,2 +1,6 @@
 # urkraine_tweets
-Web map shows Ukraine conflict events and tweets since February 2022.
+This Web map shows Ukraine conflict events and tweets since February to November 2022. Social media plays a key role as communication channel, intelligence source, and propaganda platform during times of conflict; a role which has been highlighted during the ongoing Russo-Ukrainian War. Across several studies and new coverage, there are many examples of the important role social media has played in the most recent escalation of the conflict in 2022—spreading pro-Russia propaganda portraying Ukrainian leaders as fascists , having content mined by Russian intelligence to inform missile strikes , and uplifting national resistance efforts.
+
+This project will utilize two primary sources of data. The first is a dataset of political violence, demonstration events, and strategic developments of the conflict in Ukraine from the Armed Conflict Location & Event Data Project (ACLED). Conflict points feature class is downloaded from UC Berkey library.The second dataset will be data scraped from Twitter by using snscrape package. We generated a list of hashtage, #StandWithUkraine', #StopRussianAggression' and #prayforukraine'  like, total in 21 hashtages,in English and Ukrainian. For location, we pull each administrative boundary centroids and use 150 km as radius. We aggregate tweets for each months since February to November and generate into adminstration boundry. 
+
+We use mapbox as a tool to create our web map.
